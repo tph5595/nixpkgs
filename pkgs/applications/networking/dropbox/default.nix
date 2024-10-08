@@ -55,6 +55,7 @@ buildFHSEnv {
 
   runScript = writeScript "install-and-start-dropbox" ''
     export BROWSER=firefox
+    export LD_LIBRARY_PATH=${pkgs.libGL}/lib/
 
     set -e
 
